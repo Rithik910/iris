@@ -10,6 +10,6 @@ ip3 = st.text_input('enter petal_width')
 # s = np.array(ip,ip1,ip2,ip3)
 # s.reshape(1,-1)
 # op = model.predict(s)
-op = model.predict([[ip],[ip1],[ip2],[ip3]])
+op = model.predict([[float(ip)],[float(ip1)],[float(ip2)],[float(ip3)]])
 if st.button('Predict'):
 	st.title(op[0])
