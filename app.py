@@ -8,7 +8,7 @@ ip1 = st.text_input('enter sepal_width')
 ip2 = st.text_input('enter petal_length')
 ip3 = st.text_input('enter petal_width')
 # s = np.array(ip,ip1,ip2,ip3)
-s.reshape(1,-1)
+# s.reshape(1,-1)
 # op = model.predict(s)
 op = model.predict([ip,ip1,ip2,ip3])
 if st.button('Predict'):
